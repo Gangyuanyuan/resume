@@ -94,7 +94,6 @@ section ul{
   height: 4px;
   width: 100%;
   background: #eee;
-  /*flex: 1;*/
 }
 .skills li i {
 	display: block; /*使能设置宽和高*/
@@ -125,11 +124,43 @@ section ul{
 
 main{
   min-height: calc(100vh - 172px); /*使用calc函数计算宽度*/
-  flex: 1;
+  flex: 1; /*设置弹性盒模型对象的子元素都有相同的长度*/
+  font-size: 14px;
+  line-height: 1.5;
 }
 main section{
 	margin: 30px 40px 0 30px;
 	padding-bottom: 30px;
+}
+main section .item:not(:last-child){
+	margin-bottom: 20px;
+}
+main section .item h3{
+  color: #333;
+  font-size: 16px;
+}
+main section .item img{
+  width: 100%;
+  margin-top: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+main section .item ul{
+	margin-top: 5px;
+}
+main section .item ul li strong{
+	color: #555;
+}
+main section .item ul li span{
+	background: #EFEFEF;
+	color: #FD681C;
+	border-radius: 3px;
+}
+main section .item ul li a{
+	color: #888;
+}
+main section .item ul li a:hover{
+	color: #333;
 }
 
 footer{
