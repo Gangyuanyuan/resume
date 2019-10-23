@@ -5,7 +5,12 @@ hr{ height: 0; border: none; border-top: 1px solid #DEDEDE; }
 ul, ol{ list-style: none; }
 img{ max-width: 100%; }
 .clearfix::after{ content: ''; display: block; clear: both; }
-
+.icon {
+	width: 24px; height: 24px; 
+	vertical-align: -0.15em; 
+	fill: currentColor; 
+	overflow: hidden;
+}
 body{
 	background: #EFEFEF;
   font-family: "Palatino Linotype","Book Antiqua","Helvetica Neue",Palatino;
@@ -97,9 +102,29 @@ section ul{
   width: 70%;
   background: #000;
 }
+.edu li{
+	padding: 1px;
+}
+.edu li span{
+	font-weight: bold;
+}
+.contact li,
+.more li{
+	display: flex;
+	align-items: center;
+	padding: 2px;
+	font-size: 15px;
+}
+.contact li span,
+.more li a{
+	padding-left: 15px;
+}
+.more li a:hover{
+	color: #000;
+}
 
 main{
-  min-height: calc(100vh - 172px);
+  min-height: calc(100vh - 172px); /*使用calc函数计算宽度*/
   flex: 1;
 }
 main section{
