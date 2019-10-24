@@ -23,7 +23,7 @@ body{
   max-width: 960px;
   margin: 0 auto;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: wrap; /*让弹性盒元素在必要的时候拆行*/
 }
 header{
 	background: #404041;
@@ -79,7 +79,6 @@ section ul{
   display: inline-block;
   width: 80px;
 }
-
 .personal li span:last-child::before{
   content: '：';
   padding-right: 20px;
@@ -151,7 +150,8 @@ main section .item ul{
 main section .item ul li strong{
 	color: #555;
 }
-main section .item ul li span{
+main section .item ul li span,
+main section .aboutMe li span{
 	background: #EFEFEF;
 	color: #FD681C;
 	border-radius: 3px;
@@ -161,6 +161,21 @@ main section .item ul li a{
 }
 main section .item ul li a:hover{
 	color: #333;
+}
+main section .aboutMe,
+main section .experience{
+	font-size: 15px;
+}
+main section .aboutMe div:first-child{
+	float: left;
+}
+main section .aboutMe div:last-child{
+	margin-left: 20px;
+}
+main section .aboutMe li .dark{
+	font-weight: bold;
+	color: #666;
+	background: none;
 }
 
 footer{
