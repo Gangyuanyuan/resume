@@ -124,12 +124,15 @@ section ul{
 main{
   min-height: calc(100vh - 172px); /*使用calc函数计算宽度*/
   flex: 1; /*设置弹性盒模型对象的子元素都有相同的长度*/
-  font-size: 14px;
-  line-height: 1.5;
 }
 main section{
 	margin: 30px 40px 0 30px;
 	padding-bottom: 30px;
+}
+main section ul,
+main section p{
+	font-size: 14px;
+  line-height: 1.5;
 }
 main section .item:not(:last-child){
 	margin-bottom: 20px;
@@ -140,7 +143,7 @@ main section .item h3{
 }
 main section .item img{
   width: 100%;
-  margin-top: 5px;
+  margin-top: 6px;
   border-radius: 5px;
   border: 1px solid #ccc;
 }
