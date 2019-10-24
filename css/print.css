@@ -1,0 +1,30 @@
+@media print{
+	body{
+		background: transparent;
+	}
+	header{
+		position: relative;
+	}
+	header .link{
+	  position: absolute;
+	  top: 12px;
+	  right: 12px;
+	  display: block;
+	  color: #aaa;
+	}
+	header .link:hover{
+		color: #ccc;
+	}
+	aside .edu{
+		padding-bottom: 210px;
+	}
+	main .projects .item a.img{
+	  display: none; /*隐藏项目图片*/
+	}
+	main .projects .item:nth-child(5){
+		padding-bottom: 120px;
+	}
+	footer{
+		display: none;
+	}
+}
