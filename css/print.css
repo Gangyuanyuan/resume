@@ -1,4 +1,4 @@
-@media print{
+/*@media print{*/
 	body{
 		background: transparent;
 	}
@@ -15,6 +15,16 @@
 	header .link:hover{
 		color: #ccc;
 	}
+	aside{
+		padding-top: 90px;
+	}
+	aside .avatar{
+		top: -90px;
+	}
+	aside .avatar img{
+		width: 180px;
+		height: 180px;
+	}
 	aside .edu{
 		padding-bottom: 210px;
 	}
@@ -28,8 +38,7 @@
 	main section .experience{
 		font-size: 14px;
 	}
-
 	footer{
 		display: none;
 	}
-}
+/*}*/

@@ -93,12 +93,14 @@ section ul{
   height: 4px;
   width: 100%;
   background: #eee;
+  border-radius: 2px;
 }
 .skills li i {
 	display: block; /*使能设置宽和高*/
   height: 4px;
   width: 70%;
   background: #000;
+  border-radius: 2px;
 }
 .edu li{
 	padding: 1px;
@@ -128,11 +130,6 @@ main{
 main section{
 	margin: 30px 40px 0 30px;
 	padding-bottom: 30px;
-}
-main section ul,
-main section p{
-	font-size: 14px;
-  line-height: 1.5;
 }
 main section .item:not(:last-child){
 	margin-bottom: 20px;
@@ -168,6 +165,7 @@ main section .item ul li a:hover{
 main section .aboutMe,
 main section .experience{
 	font-size: 15px;
+	line-height: 1.5;
 }
 main section .aboutMe div:first-child{
 	float: left;
