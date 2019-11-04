@@ -48,10 +48,13 @@ main section{
 main section ul,
 main section .aboutMe,
 main section .experience{
-	font-size: 12px;
+	font-size: 13px;
   line-height: 1.5;
 }
 main section ul li:nth-child(3),
 main section ul li:nth-child(4){
 	word-break: break-all;
+}
+footer{
+	font-size: 12px;
 }
