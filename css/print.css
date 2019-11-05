@@ -15,6 +15,9 @@
 	header .link:hover{
 		color: #ccc;
 	}
+	header .pdfResume{
+		display: none;
+	}
 	aside{
 		padding-top: 90px;
 	}
