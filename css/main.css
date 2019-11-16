@@ -130,10 +130,15 @@ section ul{
 .more li a:hover{
 	color: #000;
 }
-
+.honor li div:first-child{
+	float: left;
+}
+.honor li div:last-child{
+	margin-left: 16px;
+}
 main{
   min-height: calc(100vh - 172px); /*使用calc函数计算宽度*/
-  flex: 1; /*设置弹性盒模型对象的子元素都有相同的长度*/
+  flex: 1; /*使弹性盒模型对象的子元素长度相等*/
 }
 main section{
 	margin: 30px 40px 0 30px;
